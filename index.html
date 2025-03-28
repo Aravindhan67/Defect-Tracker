@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defect Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Defect Tracker</h1>
+
+    <div id="auth">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="tracker" style="display:none;">
+        <h2>Defects</h2>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="description" placeholder="Description">
+        <button onclick="addDefect()">Add Defect</button>
+        <ul id="defectList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
